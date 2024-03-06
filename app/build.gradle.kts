@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.ph32395.lap1"
+    namespace = "com.duyle.lap1"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.ph32395.lap1"
+        applicationId = "com.duyle.lap1"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
