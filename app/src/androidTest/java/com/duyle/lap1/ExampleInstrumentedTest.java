@@ -1,4 +1,4 @@
-package com.ph32395.lap1;
+package com.duyle.lap1;
 
 import android.content.Context;
 

@@ -1,4 +1,4 @@
-package com.ph32395.lap1;
+package com.duyle.lap1;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,12 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.airbnb.lottie.Lottie;
 import com.airbnb.lottie.LottieAnimationView;
-import com.duyle.lap1.R;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
@@ -34,10 +30,9 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-
         db = FirebaseFirestore.getInstance();
 
-        ghiDuLieu();
+        ghiDulieu();
 
         docDulieu();
 
@@ -54,7 +49,7 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
-    private void ghiDuLieu () {
+    private void ghiDulieu () {
         CollectionReference cities = db.collection("cities");
 
         Map<String, Object> data1 = new HashMap<>();
@@ -101,24 +96,30 @@ public class HomeActivity extends AppCompatActivity {
         data5.put("population", 21500000);
         data5.put("regions", Arrays.asList("jingjinji", "hebei"));
         cities.document("BJ").set(data5);
+
+        //cities.add();
     }
 
+    String TAG = "HomeActivity";
+
     private void docDulieu () {
-        DocumentReference docRef = db.collection("cities").document("SF");
+        DocumentReference docRef = db.collection("cities").document("LA");
         docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                 if (task.isSuccessful()) {
                     DocumentSnapshot document = task.getResult();
                     if (document.exists()) {
-                        Log.d("HomeActivity", "DocumentSnapshot data: " + document.getData());
+                        Log.d(TAG, "DocumentSnapshot data: " + document.getData());
                     } else {
-                        Log.d("HomeActivity", "No such document");
+                        Log.d(TAG, "No such document");
                     }
                 } else {
-                    Log.d("HomeActivity", "get failed with ", task.getException());
+                    Log.d(TAG, "get failed with ", task.getException());
                 }
             }
         });
     }
+
+
 }

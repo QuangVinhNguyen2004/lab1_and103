@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "494747301241",
-    "project_id": "md18306",
-    "storage_bucket": "md18306.appspot.com"
+    "project_number": "875914534171",
+    "project_id": "md18309",
+    "storage_bucket": "md18309.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:494747301241:android:701c2d7eff6258c9e86ba8",
+        "mobilesdk_app_id": "1:875914534171:android:81a4780c39aa3fcd5807be",
         "android_client_info": {
-          "package_name": "com.duyle.lab1_md18306"
+          "package_name": "com.duyle.lab1_md18309"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD6J9Xl2BN7Yd1Wadx8ymJQ1ctjx_JjzqQ"
+          "current_key": "AIzaSyAJGv-QO7kSvbqlmHPE2keUKVaT9VLp1_g"
         }
       ],
       "services": {
@@ -26,7 +26,7 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:494747301241:android:d1bae0e4635cda52e86ba8",
+        "mobilesdk_app_id": "1:875914534171:android:64faab7a955cfd665807be",
         "android_client_info": {
           "package_name": "com.duyle.lap1"
         }
@@ -34,7 +34,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD6J9Xl2BN7Yd1Wadx8ymJQ1ctjx_JjzqQ"
+          "current_key": "AIzaSyAJGv-QO7kSvbqlmHPE2keUKVaT9VLp1_g"
         }
       ],
       "services": {

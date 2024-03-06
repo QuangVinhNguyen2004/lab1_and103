@@ -1,4 +1,4 @@
-package com.ph32395.lap1;
+package com.duyle.lap1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.os.Looper;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.duyle.lap1.R;
 
 public class MainActivity extends AppCompatActivity {
 

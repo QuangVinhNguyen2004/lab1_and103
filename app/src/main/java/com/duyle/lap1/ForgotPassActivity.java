@@ -1,9 +1,8 @@
-package com.ph32395.lap1;
+package com.duyle.lap1;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,13 +10,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.duyle.lap1.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.SignInMethodQueryResult;
-
-import java.util.List;
 
 public class ForgotPassActivity extends AppCompatActivity {
 
