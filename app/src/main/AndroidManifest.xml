@@ -27,7 +27,11 @@
             android:name="com.ph32395.lap1.HomeActivity"
             android:exported="true" >
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.ph32395.lap1.SignupActivity"
@@ -38,11 +42,7 @@
         <activity
             android:name="com.ph32395.lap1.MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
